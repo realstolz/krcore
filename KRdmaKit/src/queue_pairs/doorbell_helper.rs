@@ -214,7 +214,7 @@ impl RcDoorbellHelper {
 
         #[cfg(not(feature = "OFED_5_4"))]
         {
-            self.send_doorbell.cur_wr().send_flags = send_flag;
+            self.send_doorbell.cur_wr().send_flags = send_flag as _;
         }
         unsafe {
             self.send_doorbell.cur_wr().wr.rdma.as_mut().remote_addr = raddr;

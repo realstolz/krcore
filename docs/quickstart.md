@@ -15,6 +15,15 @@ cd KRdmaKit # main library
 cargo test --features user 
 ```
 
+If some error pops out, it may be the error caused by the OFED version, try the following:
+```
+cargo test --features user,OFED_5_4
+```
+
+If the problem still exists, please kindly raise an issue!
+
+----
+
 To use KRCore at the kernel space, check  [install.md](./install.md) for more detailed steps. 
 
 
