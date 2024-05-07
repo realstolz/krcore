@@ -12,6 +12,7 @@ git checkout develop
 ```
 cd /path/to/krcore
 cd KRdmaKit # main library
+rustup default nightly-2023-01-07-x86_64-unknown-linux-gnu
 cargo test --features user 
 ```
 
