@@ -2,9 +2,10 @@
 use rdma_shim::bindings::*;
 
 use core::ffi::c_void;
-
 #[allow(unused_imports)]
-use core::ptr::NonNull;
+use core::ptr::{null_mut, NonNull};
+#[allow(unused_imports)]
+use libc::*;
 
 use alloc::boxed::Box;
 use alloc::sync::Arc;
