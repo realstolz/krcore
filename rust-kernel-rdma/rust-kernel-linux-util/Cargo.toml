@@ -12,7 +12,7 @@ no-std-net = {path = "../deps/no-std-net"}
 cfg-if = "1.0"
 
 [build-dependencies]
-bindgen = "0.54"
+bindgen = "0.59.1"
 cc = "1.0"
 shlex = "0.1"
 

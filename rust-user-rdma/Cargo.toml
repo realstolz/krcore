@@ -11,7 +11,7 @@ no-std-net = {path = "../rust-kernel-rdma/deps/no-std-net"}
 
 
 [build-dependencies]
-bindgen = "0.54.0" ## FIXME: update
+bindgen = "0.59.1" ## FIXME: update
 cc = "1.0"
 shlex = "0.1"
 
